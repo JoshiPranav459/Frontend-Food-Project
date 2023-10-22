@@ -1,1 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.html,
+body{
+    background-color:rgb(255, 255, 255);
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fedge-restaurant.com%2Fwp-content%2Fuploads%2F2018%2F09%2FHealthy-Foods.jpg&f=1&nofb=1&ipt=c42714c5edd1b67652b26f6d3b94cdde0b6842a19683af2469b210b5b1b57f90&ipo=images');
+    background-attachment: fixed;
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 240%;
+    font-weight:normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1440px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 20px; /*margin is here*/
+    border-radius: 200px;
+    transition: background-color 0.7s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: blueviolet;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.btn-ghost,
+input[type=submit]{
+    font-size: 100%;
+    
+}
+.btn-ghost:visited,
+.btn-ghost:link,
+input[type=submit]{
+    background-color:rgb(255, 135, 15);
+    border: 1px solid rgb(255, 135, 15);
+    color: rgb(255, 255, 255);
+    margin-left: 40px;
+    font-weight: 400;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]{
+    background-color: rgb(255, 135, 15);
+    border:  rgb(255, 135, 15);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type=submit]{
+    background-color: blueviolet;
+    color: white;
+    border:  blueviolet;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 60px;
+}
+
+.main-nav{
+    float: right;
+    list-style-type:none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform:uppercase ;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding: 9px 0px;
+    transition: border-bottom 0.7s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid orange;
+}
+
+
+.section-features{
+    background-color: blanchedalmond;
+    padding: 80px 0px;
+}
+
+#head1{
+    margin-top: -30px;
+}
+.heading{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading::after{
+    display: block;
+    height: 2px;
+    background-color: blueviolet;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box{
+    padding: 1%;
+
+}
+
+#h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.icon-small{
+    font-size: 350%;
+    display: block;
+    color: blueviolet;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    width: 25%;
+    float: right;
+}
+
+
+.meal-photo{
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    transition: transform 1s, opacity 0.5s;
+    
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.clearfix {zoom:1}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.section-meals{
+    padding: 0;
+}
+
+#head2{
+    margin-top: 60px;
+}
+
+.works-steps{
+    margin-bottom: 50px;
+    margin-right: 25px;
+}
+
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 10px;
+}
+
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 40px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-steps div{
+    color: blueviolet;
+    border: 4px solid blueviolet;
+    display: inline-block;
+    border-radius : 50%; 
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+    font-size: 150%;
+}
+
+.works-steps p {
+    padding-top: 10px;
+
+    font-size: larger;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 60px;
+
+}
+
+.section-steps{
+    background-color: rgb(238, 218, 218);
+}
+
+#head3{
+    margin-top: 70px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 20%;
+}
+
+.section-cities{
+    background-color: blanchedalmond;
+}
+.city-features{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: blueviolet;
+    font-size: 120%;
+    line-height: 145%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 2px;
+}
+
+a:link,
+a:visited{
+    color: blueviolet;
+    text-decoration: none;
+    border-bottom: 1px solid orange;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+a:hover,
+a:active{
+    color: rgb(57, 81, 73);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s,color 0.5s;
+}
+
+.section-testimonials{
+    background-color: #e1cdcd;
+    color: rgb(0, 0, 0);
+}
+
+#head4{
+    margin-top: 30px;
+}
+
+.blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+}
+
+.cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+
+.cite img{
+    height: 45px;
+    border-radius: 30%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#head5{
+    margin-top: 30px;
+}
+
+.section-plans{
+    background-color: rgb(224, 224, 204);
+
+}
+
+.plan-box{
+    background-color: rgb(239, 240, 241);
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid orange;
+
+}
+
+.plan-price{
+    font-size: 170%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: orange;
+}
+
+.btn-signup{
+    font-size: 100%;
+    margin: 200px;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-price span{
+    font-size: 50%;
+    font-weight: 400;
+}
+
+.plan-box ul{
+    list-style: none;
+
+}
+
+.plan-box ul li{
+    padding: 15px 0;
+}
+
+.plan-box div :last-child{
+    border: 0;
+    text-align: center;
+}
+
+.plan-box div :first-child{
+    border-top-left-radius: 50px ;
+    border-top-right-radius: 50px;
+}
+
+#head6{
+    margin-top: 20px;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+
+.textarea{
+    height: 100%;
+}
+
+input[type=checkbox]{
+    margin: 10px;
+}
+
+.footer{
+    background:rgb(35, 35, 35);
+    font-size: 80%;
+    padding: 50px;
+}
+.footer-nav li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+    font-size: 110%;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: rgb(255, 255, 255);
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color: rgb(230, 241, 241);
+}
+
+.footer p{
+    color: #ffffff;
+    text-align: center;
+}
